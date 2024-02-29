@@ -19,7 +19,6 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView2"
-        android:name="com.example.kevinwu_newsapi.Business"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

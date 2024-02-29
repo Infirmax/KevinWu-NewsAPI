@@ -36,10 +36,14 @@ class MainActivity : FragmentActivity() {
         Log.v("API", content)
 
         reader.close()
+        val frag = Business.newInstance(content)
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainerView2, frag)
+            .commit()
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val frag = Business.newInstance("asdasd")
+        val frag = Blank.newInstance()
         supportFragmentManager.beginTransaction()
             .add(R.id.fragmentContainerView2, frag)
             .commit()
